@@ -14,7 +14,7 @@ vector<int> Finder::findSubstrings(string s1, string s2) {
                 index);  // This lets us search for a certain sub string 's2'
                          // within the larger string 's1' from the start index.
                          // In this instance, the starting index is 0
-    if (found != string::npos) {
+    if (found != string::npos && found == index) {
       result.push_back(found);
       index =
           found + 1;  // This increments the index value so we are searching for
