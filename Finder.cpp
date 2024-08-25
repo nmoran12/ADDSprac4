@@ -8,7 +8,7 @@ vector<int> Finder::findSubstrings(string s1, string s2) {
   size_t index =
       0;  // This index lets us search from the beginning of the 's1' string
 
-  for (size_t i = 1; i <= s2.size(); i++) {
+  for (size_t i = 1; i <= s2.size(); ++i) {
     size_t found =
         s1.find(s2.substr(0, i),
                 index);  // This lets us search for a certain sub string 's2'
